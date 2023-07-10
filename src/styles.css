@@ -55,7 +55,7 @@ body {
   outline: solid 2px rgb(28, 172, 211);
 }
 
-#search-form button {
+#search-form-button {
   border-radius: 25px;
   background-color: rgb(25, 199, 190);
   width: 120px;
@@ -63,11 +63,11 @@ body {
   font-weight: 700;
   box-shadow: 5px 5px 5px;
 }
-#search-form button:hover {
+#search-form-button:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #475485;
 }
 
-#search-form button:active {
+#search-form-button:active {
   box-shadow: inset 1px 1px 2px #6375b8, inset -1px -1px 2px #fff;
 }
 

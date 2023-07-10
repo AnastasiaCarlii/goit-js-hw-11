@@ -1,8 +1,7 @@
-export const galleryMarkup = data =>
-  data
+export const galleryMarkup = data => {
+  return data
     .map(
-      photo => `
-  <a href='${photo.largeImageURL}' class='gallery__link'>
+      photo => `<a href='${photo.largeImageURL}' class='gallery__link'>
     <img class='gallery__image' src='${photo.webformatURL}' alt='${photo.tags}' loading='lazy' />
     <div class='info'>
       <p class='info-item likes'>${photo.likes}</p>
@@ -10,7 +9,8 @@ export const galleryMarkup = data =>
       <p class='info-item comments'>${photo.comments}</p>
       <p class='info-item downloads'>${photo.downloads}</p>
     </div>
-  </a>
-`
+    </a>
+  `
     )
     .join('');
+};
